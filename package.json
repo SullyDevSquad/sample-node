@@ -1,0 +1,19 @@
+{
+  "name": "sample-node",
+  "version": "1.0.0",
+  "description": "A sample Node.js project with semantic versioning and GitHub Actions for publishing to GitHub Packages.",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Building the project...'",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/sample-node.git"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "semantic-release": "^21.0.0"
+  }
+}
