@@ -5,7 +5,10 @@ on:
     branches:
       - main
       - beta
-
+      
+permissions:
+    contents: write
+    packages: write
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -29,4 +32,5 @@ jobs:
       - name: Run semantic release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run semantic-release
