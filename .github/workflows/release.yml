@@ -17,8 +17,6 @@ permissions:
     repository-projects: write
     security-events: write
     statuses: write
-env:
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
   
 jobs:
   release:
@@ -42,3 +40,6 @@ jobs:
 
       - name: Run semantic release
         run: npm run semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
