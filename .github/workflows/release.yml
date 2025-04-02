@@ -5,10 +5,19 @@ on:
     branches:
       - main
       - beta
-      
+
 permissions:
     contents: write
     packages: write
+    actions: write
+    checks: write
+    deployments: write
+    issues: write
+    pull-requests: write
+    repository-projects: write
+    security-events: write
+    statuses: write
+    
 jobs:
   release:
     runs-on: ubuntu-latest
