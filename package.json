@@ -1,5 +1,5 @@
 {
-  "name": "sample-node",
+  "name": "@sullydevsquad/sample-node",
   "version": "1.0.0",
   "description": "A sample Node.js project with semantic versioning and GitHub Actions for publishing to GitHub Packages.",
   "main": "index.js",
