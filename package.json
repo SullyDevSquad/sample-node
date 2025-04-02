@@ -9,11 +9,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/sample-node.git"
+    "url": "git+https://github.com/SullyDevSquad/sample-node.git"
   },
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
-    "semantic-release": "^21.0.0"
+    "semantic-release": "^21.0.0",
+    "@semantic-release/commit-analyzer": "^11.0.0",
+    "@semantic-release/release-notes-generator": "^11.0.0",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/github": "^10.0.0"
+  },
+  "release": {
+    "branches": ["main", "beta"],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/github"
+    ]
   }
 }
