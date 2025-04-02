@@ -7,12 +7,7 @@
     "build": "echo 'Building the project...'",
     "semantic-release": "semantic-release"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SullyDevSquad/sample-node.git"
-  },
-  "author": "Your Name",
-  "license": "MIT",
+  "repository": "https://github.com/SullyDevSquad/sample-node.git",
   "devDependencies": {
     "semantic-release": "^21.0.0",
     "@semantic-release/commit-analyzer": "^11.0.0",
